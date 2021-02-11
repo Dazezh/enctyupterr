@@ -47,10 +47,34 @@ int input()
         std::cout << std::endl;
     }
 
+    else if (input == "caesar-crypt")
+    {
+        std::cout << "recommendations for registration" << std::endl;
+        std::cout << "1. The code is entered in square brackets [(code)]. " << std::endl;
+        std::cout << "2. There can be several codes in one sentence." << std::endl;
+        std::cout << "For example: [y] Here the code y is used [x] And here is the code x" << std::endl;
+        std::cout << "message: ";
+        getline (std::cin, input);
+        caesarCrypt(input);
+        std::cout << std::endl;
+    }
+
+    else if (input == "caesar-decrypt")
+    {
+        std::cout << "recommendations for registration" << std::endl;
+        std::cout << "1. The code is entered in square brackets or in the style of my encoder. [(code)] or <further code: ROT(code)>" << std::endl;
+        std::cout << "2. There can be several codes in one sentence." << std::endl;
+        std::cout << "For example: [y] Here the code y is used [ROT1] And here is the code ROT1" << std::endl;
+        std::cout << "message: ";
+        getline (std::cin, input);
+        caesarDecrypt(input);
+        std::cout << std::endl;
+    }
+
     else // error messange
     {
-        std::cout << "Double-check your details, otherwise I don't know that :D" <<std::endl;
-        std::cout << "If there is command 'help' ;3" << std::endl;
+        std::cerr << "Double-check your details, otherwise I don't know that :D" <<std::endl;
+        std::cerr << "If there is command 'help' ;3" << std::endl;
     }
 
     return 0;
