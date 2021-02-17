@@ -11,7 +11,7 @@ std::string morseCrypt (std::string input)
         {
             for (int z = 0; z < 26; z++)
             {
-                if (input[i] == *letters[z])
+                if (std::tolower(input[i]) == *letters[z])
                 {
                     std::cout << morseLetters[z] << " ";
                 }

@@ -30,7 +30,7 @@ int input()
         else if (input == "a1z26-crypt")
         {
             std::cout << "registration" << std::endl;
-            std::cout << "1. The upper case is not encrypted yet. It will just be ignored :/" << std::endl;
+            std::cout << "1. Sooo no more recommendation :/" << std::endl;
             std::cout << "message: ";
             getline (std::cin, input);
             std::cout << "encrypt: ";
@@ -82,7 +82,7 @@ int input()
 
         else if (input == "vigener-crypt")
         {
-           /* std::cout << "registration" << std::endl;
+            std::cout << "registration" << std::endl;
             std::cout << "1. First, enter the encryption key" << std::endl;
             std::cout << "2. Then the encrypted message" << std::endl;
             std::cout << "3. Numbers are not encrypted" << std::endl;
@@ -95,8 +95,8 @@ int input()
             getline (std::cin, input);
             std::cout << "encrypt: ";
             vigenerCrypt(key, input);
-            std::cout << std::endl; */
-            std::cout << "you can't encrypt it into the vigener yet) it turns out there is a strong bug here, but I'm already working on it" << std::endl;
+            std::cout << std::endl; 
+           // std::cout << "you can't encrypt it into the vigener yet) it turns out there is a strong bug here, but I'm already working on it" << std::endl;
             std::cout << "########################" <<std::endl;
         }
 
@@ -122,7 +122,7 @@ int input()
         else if (input == "morse-crypt")
         {
             std::cout << "registration" << std::endl;
-            std::cout << "1. The upper case is not encrypted yet. It will just be ignored :/" << std::endl;
+            std::cout << "1. Sooo no more recommendation :/" << std::endl;
             std::cout << "message: ";
             getline (std::cin, input);
             std::cout << "encrypt: ";

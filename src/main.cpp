@@ -3,7 +3,7 @@
 int main()
 {   
     std::cout << "Welcome tu encryupter!!!" << std::endl;
-    std::cout << "Release: beta.4" << std::endl;
+    std::cout << "Release: 1" << std::endl;
     std::cout << "########################" <<std::endl;
     std::cout << "help - this is help." << std::endl;
     

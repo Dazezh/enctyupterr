@@ -10,9 +10,10 @@ std::string a1z26Crypt(std::string input) // encryption algorithm a1z26
         {
             for (int z = 0; z < 26; z++)
             {
-                if (input[i] == *letters[z])
+                if (std::tolower(input[i]) == *letters[z])
                 {
                     std::cout << z + 1 << " ";
+                    break;
                 }
             }
         }
@@ -40,7 +41,7 @@ std::string a1z26Decrypt(std::string input) // decryption algorithm a1z26
             temp += symbol; 
             if (input[i + 1] == *" " || i == input.size() - 1)
             {
-                if (stoi(temp) < 26 && stoi(temp) > 0)
+                if ((stoi(temp) - 1) < 26 && stoi(temp) > 0)
                 {
                     std::cout << letters[stoi(temp) - 1];
                     temp = "";
